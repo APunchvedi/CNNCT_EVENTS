@@ -56,6 +56,6 @@ Please check the live app here:
 https://cnnct-events-frontend.onrender.com
 
 User Details:
- Username: Rishabh Pant
- Email: rishabhpant@gmail.com
+ Username: Test User55
+ Email: testuser55@gmail.com
  Password: 123456789
