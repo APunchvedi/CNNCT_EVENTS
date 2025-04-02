@@ -1,0 +1,55 @@
+.meeting-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .meeting-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .meeting-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .meeting-time {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .meeting-details {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .meeting-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .join-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .join-button:hover {
+    background-color: #0056b3;
+  }
+  

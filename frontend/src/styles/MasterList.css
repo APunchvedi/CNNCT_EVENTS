@@ -1,0 +1,206 @@
+.master-list-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.master-list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.master-list-item-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.master-list-date-time {
+  min-width: 170px;
+  padding-right: 1rem;
+}
+
+.master-list-date {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.master-list-time {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  color: #1877f2;
+}
+
+.master-list-details {
+  flex: 1;
+}
+
+.master-list-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.master-list-subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #666666;
+}
+
+.master-list-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.master-list-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.master-list-button {
+  height: 35px;
+  padding: 0 1rem;
+  border-radius: 13px;
+  border: 1px solid #e0e0e0;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+/* Button variations */
+.master-list-button-accept {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.master-list-button-accept:hover {
+  background-color: #45a049;
+}
+
+.master-list-button-reject {
+  background-color: #ea384c;
+  color: white;
+  border: none;
+}
+
+.master-list-button-reject:hover {
+  background-color: #d32f2f;
+}
+
+.master-list-button-accepted {
+  background-color: #f3f3f1;
+  color: #000000;
+  border: 1px solid #f3f3f1;
+}
+
+.master-list-button-rejected {
+  background-color: #616161;
+  color: #ffffff;
+  border: 1px solid #616161;
+}
+
+.button-icon {
+  margin-right: 4px;
+}
+
+.master-list-participants {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.master-list-participants-icon {
+  color: #666666;
+}
+
+.master-list-participants-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #666666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .master-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem;
+  }
+
+  .master-list-item-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .master-list-date-time {
+    min-width: auto;
+    padding-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .master-list-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .master-list-buttons {
+    margin-bottom: 0.5rem;
+  }
+}

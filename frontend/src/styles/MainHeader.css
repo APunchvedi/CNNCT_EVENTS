@@ -1,0 +1,124 @@
+/* Import the font first */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
+
+.nav-container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-radius: 40px;
+  background-color: #F0F0F0;
+  padding: 0 32px;
+  box-sizing: border-box;
+  max-width: 1728px;
+  margin: 0 auto;
+}
+
+/* Add a class for transparent background */
+.transparent-bg {
+  background-color: transparent;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  color: #0066ff;
+}
+
+.logo-image {
+  height: 32px;
+  width: auto;
+}
+
+.brand-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-badge {
+  background-color: #0066ff;
+  color: white;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800 !important;
+  font-size: 24px!important;
+  line-height: 100%!important;
+  letter-spacing: 0%!important;
+  width: 86px!important;
+  height: 30px!important;
+  display: flex!important;
+  align-items: center!important;    
+  color: #000000 ;
+}
+
+.cta-button {
+  background-color: #0066ff;
+  color: white;
+  border-radius: 9999px;
+  padding: 0 24px;
+  height: 40px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button:hover {
+  background-color: #0052cc;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    top: 20px;
+    padding: 0 16px;
+  }
+  
+  .nav-wrapper {
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 16px;
+  }
+  
+  .logo-text {
+    font-size: 20px;
+    width: 72px;
+    height: 24px;
+  }
+  
+  .logo-badge {
+    width: 20px;
+    height: 20px;
+    font-size: 0.75rem;
+  }
+  
+  .cta-button {
+    padding: 0 16px;
+    height: 36px;
+    font-size: 0.75rem;
+  }
+}

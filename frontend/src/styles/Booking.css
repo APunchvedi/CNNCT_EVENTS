@@ -1,0 +1,128 @@
+.booking-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    
+  }
+  
+  .booking-title {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .booking-tabs-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1.5px solid #00000059;
+   
+  }
+  
+  .booking-tabs {
+    display: flex;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .booking-tab {
+    padding: 1rem 1.5rem;
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .booking-tab:hover {
+    /* color: #1677ff; */
+    /* background-color: #f9f9f9; */
+  }
+  
+  .booking-tab.active {
+    /* color: #1677ff; */
+    border-bottom: 2px solid #1677ff;
+    /* background-color: #f5f9ff; */
+  }
+  
+  .booking-content {
+    min-height: 400px;
+    padding: 1rem;
+  }
+  
+  /* Meeting Card Styles */
+  .meeting-card {
+    padding: 1.25rem;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .meeting-date {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .meeting-time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .meeting-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .meeting-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .meeting-attendees {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .booking-tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    
+    .booking-tab {
+      padding: 0.75rem 1rem;
+    }
+    
+    .meeting-details {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .booking-container {
+      padding: 1rem;
+    }
+    
+    .booking-tab {
+      padding: 0.75rem 0.5rem;
+      font-size: 0.9rem;
+    }
+  }

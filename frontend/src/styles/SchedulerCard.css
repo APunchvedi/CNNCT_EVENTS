@@ -1,0 +1,48 @@
+/* SchedulerCard Styles */
+.scheduler-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .scheduler-card:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  .scheduler-header {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb9f;
+
+    display: flex;
+    justify-content: left;
+    border-radius: 8px;
+}
+
+  
+  .scheduler-content {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .view-container {
+    transition: all 0.3s ease;
+  }
+  
+  .view-container.inactive {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(10px);
+  }
+  
+  .view-container.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  

@@ -1,0 +1,31 @@
+.meeting-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+  
+  .meeting-list-empty {
+    padding: 32px;
+    text-align: center;
+    font-size: 16px;
+    color: #6b7280;
+  }
+  
+  .meeting-card {
+    animation: fadeInUp 0.3s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

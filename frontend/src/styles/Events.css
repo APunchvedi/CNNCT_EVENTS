@@ -1,0 +1,32 @@
+.events-page {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .events-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start; /* Align cards to the start of the container */
+  }
+  
+  .event-card-wrapper {
+    flex: 0 0 auto; /* Prevent stretching */
+    width: 300px; /* Fixed width for cards, adjust as needed */
+    margin-bottom: 20px; /* Additional vertical spacing if needed */
+    margin-top: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .event-card-wrapper {
+      width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .event-card-wrapper {
+      width: 100%; /* Full width on mobile */
+    }
+  }

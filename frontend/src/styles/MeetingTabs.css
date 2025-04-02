@@ -1,0 +1,25 @@
+.meetings-tabs {
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .meetings-tabs a {
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #555;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .meetings-tabs a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .meetings-tabs .active {
+    background-color: #007bff;
+    color: white;
+  }
+  

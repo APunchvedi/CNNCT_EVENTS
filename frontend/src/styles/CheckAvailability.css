@@ -1,0 +1,228 @@
+.weekly-schedule-container {
+    background-color: white !important;
+    border-radius: 12px;
+
+    padding: 24px;
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .schedule-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  
+  .header-section h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 4px 0;
+    color: #0b0b0b;
+  }
+  .header-section p {
+    color: #3b82f6;
+
+  }
+  
+  .text-light {
+    color: #666;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .text-primary {
+    color: #3b82f6;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .schedule-divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 16px 0 24px 0;
+  }
+  
+  .weekly-hours-section h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+    color: #333;
+  }
+  
+  .days-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .day-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .day-checkbox {
+    width: 60px;
+    flex-shrink: 0;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    padding-left: 26px;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border: 1.5px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+  }
+  
+  .checkmark svg {
+    color: white;
+  }
+  
+  .unavailable-text {
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .time-slots-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .time-slot {
+    display: flex;
+    align-items: center;
+  }
+  
+  .time-input {
+    width: 80px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1.5px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+  }
+  
+  .time-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }
+  
+  .time-separator {
+    margin: 0 8px;
+    color: #666;
+  }
+  
+  .icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  
+  .icon-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .remove-button {
+    margin-left: 8px;
+  }
+  
+  .slot-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .add-button {
+    color: #3b82f6;
+  }
+  
+  .duplicate-icon {
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #666;
+    position: relative;
+  }
+  
+  .duplicate-icon::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #666;
+    top: -4px;
+    left: -4px;
+    background-color: white;
+    z-index: -1;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 640px) {
+    .weekly-schedule-container {
+      padding: 16px;
+    }
+    
+    .schedule-header {
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .time-input {
+      width: 70px;
+    }
+    
+    .day-checkbox {
+      width: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .day-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    
+    .time-slots-container {
+      width: 100%;
+      padding-left: 26px;
+    }
+  }
+  
